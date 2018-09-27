@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="Keywords" content="" />
+	<meta name="Description" content="" />
+	<title>404页面</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		body{
+			background: #2F4F4F;
+		}
+		.container{
+			margin: 100px auto;
+			width: 450px;
+			text-align: center;
+		}
+		.container .box{
+			width: 450px;
+			height: 260px;
+		}
+		.container .box ul{
+			list-style: none;
+		}
+		.container .box ul li{
+			float: left;
+			height: 260px;
+			width: 150px;
+			font-size: 200px;
+			line-height: 280px;
+		}
+		.container .box ul li:nth-child(1),.box ul li:nth-child(3){
+			color: #262626; 
+			animation: donghua 10s infinite linear;
+		}
+		.container .box ul li .circle1,.container .box ul li .circle1 .circle2{
+			border-radius: 50%;
+			background: transparent;
+		}
+		.container .box ul li .circle1{
+			width: 120px;
+			height: 120px;
+			margin-top: 90px;
+			margin-left: 15px;
+			border: solid 15px;
+			border-color: #FFB90F transparent #FFB90F transparent;
+			animation: donghua1 2s infinite linear,donghua3 10s infinite linear;
+		}
+		.container .box ul li .circle1 .circle2{
+			width: 90px;
+			height: 90px;
+			border: solid 10px;
+			border-color: transparent #00008B transparent #00008B;
+			animation: donghua2 4s infinite linear,donghua4 10s infinite linear;
+		}
+		@keyframes donghua{
+			0%{
+				color: #262626;/*灰色*/
+			}
+			25%{
+				color: #3A5FCD;/*蓝色*/
+			}
+			50%{
+				color: #FF7F24;/*橙色*/
+			}
+			75%{
+				color: #EE2C2C;/*红色*/
+			}
+			100%{
+				color: #551A8B;/*紫色*/
+			}
+		}
+		@keyframes donghua1{
+			0%{
+				transform: rotate(0deg);
+			}
+			25%{
+				transform: rotate(90deg);
+			}
+			50%{
+				transform: rotate(180deg);
+			}
+			75%{
+				transform: rotate(270deg);
+			}
+			100%{
+				transform: rotate(360deg);
+			}
+		}
+		@keyframes donghua2{
+			0%{
+				transform: rotate(0deg);
+			}
+			25%{
+				transform: rotate(-90deg);
+			}
+			50%{
+				transform: rotate(-180deg);
+			}
+			75%{
+				transform: rotate(-270deg);
+			}
+			100%{
+				transform: rotate(-360deg);
+			}
+		}
+		@keyframes donghua3{
+			0%{
+				border-color: #262626 transparent #262626 transparent;
+			}
+			25%{
+				border-color: #3A5FCD transparent #3A5FCD transparent;
+			}
+			50%{
+				border-color: #FF7F24 transparent #FF7F24 transparent;
+			}
+			75%{
+				border-color: #EE2C2C transparent #EE2C2C transparent;
+			}
+			100%{
+				border-color: #551A8B transparent #551A8B transparent;
+			}
+		}
+		@keyframes donghua4{
+			0%{
+				border-color: transparent #551A8B transparent #551A8B;
+			}
+			25%{
+				border-color: transparent #EE2C2C transparent #EE2C2C;
+			}
+			50%{
+				border-color: transparent #FF7F24 transparent #FF7F24;
+			}
+			75%{
+				border-color: transparent #3A5FCD transparent #3A5FCD;
+			}
+			100%{
+				border-color: transparent #262626 transparent #262626;
+			}
+		}
+</style>
+</head>
+<body>
+	<div class="container">
+		<div class="box">
+			<ul>
+				<li>4</li>
+				<li>
+					<div class="circle1">
+						<div class="circle2"></div>
+					</div>	
+				</li>
+				<li>4</li>
+			</ul>
+		</div>
+		<h3> 404 NOT FOUND </h3>
+    </div>
+</body>
+</html>
